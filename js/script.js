@@ -90,3 +90,21 @@ setTimeout(() => {
 window.addEventListener('load', () => {
     window.scrollTo(0, 0);
 });
+
+let nav = document.getElementById('nav');
+
+function closeOverlay() {
+    nav.style.right = '-100%';
+    nav.style.display = 'none'
+}
+
+function openOverlay() {
+    nav.style.right = '0%';
+    nav.style.display = 'flex'
+}
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 1023 && nav.style.display == 'none') {
+        nav.style.display = 'flex';
+    }
+})

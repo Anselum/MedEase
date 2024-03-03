@@ -573,3 +573,7 @@ span:hover~.circle,
     mix-blend-mode: difference;
     --circle-radius: 200px;
 }
+
+.circle {
+    z-index: 1000;
+}

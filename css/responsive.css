@@ -2,6 +2,9 @@
 
 @media screen and (max-width: 1023px) {
 
+    body {
+        cursor: auto;
+    }
 
     :root {
         --padding: 2%;
@@ -27,9 +30,10 @@
         width: 50%;
         height: 100vh;
         padding: 2% 4%;
+        display: none;
         background-color: white;
         position: fixed;
-        right: -100%;
+        right: -200%;
         top: 0;
         bottom: 0;
         z-index: 200;
@@ -321,6 +325,9 @@
         margin-top: 10px;
     }
 
+    .circle {
+        display: none;
+    }
 
 }
 
