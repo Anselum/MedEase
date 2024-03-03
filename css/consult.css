@@ -1,0 +1,138 @@
+body {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.left {
+    width: 50%;
+    padding: 0.5%;
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right h1 {
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.right p {
+    font-size: 14px;
+    font-weight: 200;
+    text-align: center;
+}
+
+form {
+    width: 60%;
+    margin-top: 30px;
+}
+
+.form-div {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin: 5px 0;
+}
+
+.form-div label {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.form-div input,
+.form-div textarea {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.058);
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+#register {
+    width: 100%;
+    background-color: var(--light-blue);
+    transition: all 0.25s;
+    padding: 15px 0;
+    border-radius: 5px;
+    color: white;
+    margin-top: 25px;
+}
+
+#register:hover {
+    scale: 1.05;
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+@media screen and (max-width: 1023px){
+    
+
+    /* Consult */
+
+    body {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: stretch;
+        justify-content: space-around;
+    }
+
+    .left {
+        width: 100%;
+        padding: 0.5%;
+        display: none;
+    }
+
+    .right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right h1 {
+        font-size: 50px;
+        font-weight: 900;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .right p {
+        font-size: 14px;
+        font-weight: 200;
+        text-align: center;
+    }
+
+    form {
+        width: 70%;
+        margin-top: 30px;
+    }
+
+    #register:active {
+        scale: 1.05;
+        background-color: var(--dark-blue);
+        color: white;
+    }
+
+
+}

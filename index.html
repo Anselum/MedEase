@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedEase</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <div class="header" id="header">
+        <img src="./img/Logo.png" class="logo"></img>
+        <div class="nav">
+            <nav>
+                <a onclick="lenis.scrollTo('#home')">Home</a>
+                <a onclick="lenis.scrollTo('#about')">About</a>
+                <a onclick="lenis.scrollTo('#consult')">Consultation</a>
+                <a onclick="lenis.scrollTo('#testimonials')">Testimonials</a>
+                <a onclick="lenis.scrollTo('#contact')">Contact</a>
+            </nav>
+            <button class="primary-button register" onclick="window.location='register.html'">Register</button>
+            <svg width="30px" height="30px" class="close"
+                onclick="gsap.to('.nav',{right:'-100%',duration:0.5,ease:'easein'})">
+                <circle cx="12" cy="12" r="10" stroke="#1C274C" stroke-width="1.5" />
+                <path d="M14.5 9.50002L9.5 14.5M9.49998 9.5L14.5 14.5" stroke="white" stroke-width="1.5"
+                    stroke-linecap="round" />
+            </svg>
+        </div>
+        <div class="hamburger" onclick="gsap.to('.nav',{right:'0%',duration:0.5,ease:'easein'})">
+            <svg width="20px" height="20px">
+                <path d="M20 7L4 7" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M20 12L4 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M20 17L4 17" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+        </div>
+    </div>
+
+
+    <div class="hero-section" id="home">
+        <div class="hero-section-left">
+            <h1>The greatest wealth is <span>health.</span></h1>
+            <p>Connecting you with trusted healthcare professionals for personalized guidance and support.</p>
+            <button class="primary-button" onclick="window.location='appointment.html'">Consult Now</button>
+        </div>
+        <div class="hero-section-right">
+            <img src="./img/hero-image.png" alt="Hero-image">
+        </div>
+    </div>
+
+
+    <div class="about-section" id="about">
+        <div class="about-div to-observe from-bottom">
+            <svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M37.8333 29.3333H35.1666V26.6667C35.1666 25.9594 34.8857 25.2811 34.3856 24.7811C33.8855 24.281 33.2072 24 32.5 24C31.7927 24 31.1145 24.281 30.6144 24.7811C30.1143 25.2811 29.8333 25.9594 29.8333 26.6667V29.3333H27.1666C26.4594 29.3333 25.7811 29.6143 25.281 30.1144C24.7809 30.6145 24.5 31.2928 24.5 32C24.5 32.7072 24.7809 33.3855 25.281 33.8856C25.7811 34.3857 26.4594 34.6667 27.1666 34.6667H29.8333V37.3333C29.8333 38.0406 30.1143 38.7189 30.6144 39.219C31.1145 39.719 31.7927 40 32.5 40C33.2072 40 33.8855 39.719 34.3856 39.219C34.8857 38.7189 35.1666 38.0406 35.1666 37.3333V34.6667H37.8333C38.5406 34.6667 39.2188 34.3857 39.7189 33.8856C40.219 33.3855 40.5 32.7072 40.5 32C40.5 31.2928 40.219 30.6145 39.7189 30.1144C39.2188 29.6143 38.5406 29.3333 37.8333 29.3333ZM54.26 13.3333C51.4165 10.5192 47.6609 8.81406 43.6707 8.52555C39.6806 8.23705 35.7187 9.3842 32.5 11.76C29.1071 9.23637 24.884 8.09203 20.6811 8.55743C16.4782 9.02284 12.6078 11.0634 9.84924 14.2682C7.09067 17.473 5.64884 21.6041 5.81412 25.8294C5.9794 30.0547 7.7395 34.0605 10.74 37.04L26.74 53.1733C28.24 54.6715 30.2733 55.513 32.3933 55.513C34.5133 55.513 36.5466 54.6715 38.0466 53.1733L54.0466 37.04C55.6225 35.5004 56.8785 33.6645 57.7425 31.638C58.6065 29.6114 59.0615 27.434 59.0814 25.231C59.1012 23.028 58.6854 20.8428 57.858 18.801C57.0306 16.7592 55.8078 14.9011 54.26 13.3333ZM50.5 33.2267L34.5 49.2267C34.2521 49.4766 33.9571 49.675 33.6322 49.8104C33.3072 49.9458 32.9587 50.0155 32.6066 50.0155C32.2546 50.0155 31.9061 49.9458 31.5811 49.8104C31.2562 49.675 30.9612 49.4766 30.7133 49.2267L14.7133 33.2267C12.622 31.0889 11.4509 28.2172 11.4509 25.2267C11.4509 22.2361 12.622 19.3644 14.7133 17.2267C16.8444 15.1226 19.7186 13.9429 22.7133 13.9429C25.7081 13.9429 28.5822 15.1226 30.7133 17.2267C30.9612 17.4766 31.2562 17.675 31.5811 17.8104C31.9061 17.9458 32.2546 18.0155 32.6066 18.0155C32.9587 18.0155 33.3072 17.9458 33.6322 17.8104C33.9571 17.675 34.2521 17.4766 34.5 17.2267C36.6311 15.1226 39.5052 13.9429 42.5 13.9429C45.4947 13.9429 48.3689 15.1226 50.5 17.2267C52.6073 19.3668 53.7885 22.2498 53.7885 25.2533C53.7885 28.2568 52.6073 31.1399 50.5 33.28V33.2267Z"
+                    fill="black" />
+            </svg>
+            <p>Qualified Doctors</p>
+        </div>
+        <div class="about-div to-observe from-bottom">
+            <svg width="47" height="46" viewBox="0 0 47 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M20.2461 2.24609V4.94141H22.9414V2.24609H20.2461ZM24.5586 2.24609V4.94141H27.2539V2.24609H24.5586ZM28.8711 2.24609V4.94141H31.5664V2.24609H28.8711ZM20.2461 6.55859V10.6914H22.9414V6.55859H20.2461ZM24.5586 6.55859V10.6914H27.2539V6.55859H24.5586ZM28.8711 6.55859V10.6914H31.5664V6.55859H28.8711ZM20.2461 12.3086V16.4414H22.9414V12.3086H20.2461ZM24.5586 12.3086V16.4414H27.2539V12.3086H24.5586ZM28.8711 12.3086V16.4414H31.5664V12.3086H28.8711ZM44.5039 12.8933L36.0586 17.7193V19.3164H44.5039V12.8933ZM20.2461 18.0586V22.1914H22.9414V18.0586H20.2461ZM24.5586 18.0586V22.1914H27.2539V18.0586H24.5586ZM28.8711 18.0586V22.1914H31.5664V18.0586H28.8711ZM36.0586 20.9336V30.8164H44.5039V20.9336H36.0586ZM4.25391 23V25.0664H5.87109V23H4.25391ZM20.2461 23.8086V27.9414H22.9414V23.8086H20.2461ZM24.5586 23.8086V27.9414H27.2539V23.8086H24.5586ZM28.8711 23.8086V27.9414H31.5664V23.8086H28.8711ZM4.12471 26.6836L3.4958 27.9414H16.6916L16.0627 26.6836H4.12471ZM2.99609 29.5586V43.7539H5.0625V41.6875H7.9375V43.7539H12.25V41.6875H15.125V43.7539H17.1914V29.5586H2.99609ZM20.2461 29.5586V33.6914H22.9414V29.5586H20.2461ZM24.5586 29.5586V33.6914H27.2539V29.5586H24.5586ZM28.8711 29.5586V33.6914H31.5664V29.5586H28.8711ZM5.0625 31.625H7.9375V33.0625H5.0625V31.625ZM12.25 31.625H15.125V33.0625H12.25V31.625ZM36.0586 32.4336V43.7539H38.8438V41.6875H41.7188V43.7539H44.5039V32.4336H36.0586ZM5.0625 34.5H7.9375V35.9375H5.0625V34.5ZM12.25 34.5H15.125V35.9375H12.25V34.5ZM20.2461 35.3086V39.4414H22.9414V35.3086H20.2461ZM24.5586 35.3086V39.4414H27.2539V35.3086H24.5586ZM28.8711 35.3086V39.4414H31.5664V35.3086H28.8711ZM5.0625 37.375H7.9375V38.8125H5.0625V37.375ZM12.25 37.375H15.125V38.8125H12.25V37.375ZM20.2461 41.0586V43.7539H22.9414V41.0586H20.2461ZM24.5586 41.0586V43.7539H27.2539V41.0586H24.5586ZM28.8711 41.0586V43.7539H31.5664V41.0586H28.8711Z"
+                    fill="black" />
+            </svg>
+            <p>Modern Facilities</p>
+        </div>
+        <div class="about-div to-observe from-bottom">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M21.5385 2.15387C17.9954 2.15387 15.0769 5.07233 15.0769 8.61541V12.9231H19.3846V8.61541C19.3846 7.40279 20.3258 6.46156 21.5385 6.46156H34.4615C35.6742 6.46156 36.6154 7.40279 36.6154 8.61541V12.9231H40.9231V8.61541C40.9231 5.07233 38.0046 2.15387 34.4615 2.15387H21.5385ZM6.46154 15.0769C4.74783 15.0769 3.10431 15.7577 1.89254 16.9695C0.680767 18.1813 0 19.8248 0 21.5385L0 47.3846C0 49.0983 0.680767 50.7419 1.89254 51.9536C3.10431 53.1654 4.74783 53.8462 6.46154 53.8462H49.5385C53.1052 53.8462 56 50.9514 56 47.3846V21.5385C56 19.8248 55.3192 18.1813 54.1075 16.9695C52.8957 15.7577 51.2522 15.0769 49.5385 15.0769H6.46154ZM28 21.336C29.7241 21.3346 31.4315 21.6731 33.0246 22.3323C34.6177 22.9914 36.0652 23.9581 37.2843 25.1772C38.5034 26.3963 39.4702 27.8439 40.1293 29.437C40.7884 31.0301 41.127 32.7375 41.1255 34.4616C41.127 36.1856 40.7884 37.8931 40.1293 39.4862C39.4702 41.0793 38.5034 42.5268 37.2843 43.7459C36.0652 44.965 34.6177 45.9317 33.0246 46.5909C31.4315 47.25 29.7241 47.5885 28 47.5871C26.2759 47.5885 24.5685 47.25 22.9754 46.5909C21.3823 45.9317 19.9348 44.965 18.7157 43.7459C17.4966 42.5268 16.5298 41.0793 15.8707 39.4862C15.2116 37.8931 14.873 36.1856 14.8745 34.4616C14.873 32.7375 15.2116 31.0301 15.8707 29.437C16.5298 27.8439 17.4966 26.3963 18.7157 25.1772C19.9348 23.9581 21.3823 22.9914 22.9754 22.3323C24.5685 21.6731 26.2759 21.3346 28 21.336ZM25.8462 28V32.3077H21.5385V36.6154H25.8462V40.9231H30.1538V36.6154H34.4615V32.3077H30.1538V28H25.8462Z"
+                    fill="black" />
+            </svg>
+            <p>Chamber Service</p>
+        </div>
+        <div class="about-div to-observe from-bottom">
+            <svg width="56" height="55" viewBox="0 0 56 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M45.4375 13.75H52.3125V55H7.625V13.75H14.5V10.3125H17.9375V13.75H42V10.3125H45.4375V13.75ZM48.875 17.1875H45.4375V20.625H48.875V17.1875ZM42 17.1875H17.9375V20.625H42V17.1875ZM14.5 17.1875H11.0625V20.625H14.5V17.1875ZM11.0625 51.5625H48.875V24.0625H11.0625V51.5625ZM7.625 10.3125V6.875H4.1875V44.6875H0.75V3.4375H7.625V0H11.0625V3.4375H35.125V0H38.5625V3.4375H45.4375V6.875H38.5625V10.3125H35.125V6.875H11.0625V10.3125H7.625ZM17.9375 37.8125V34.375H21.375V37.8125H17.9375ZM24.8125 37.8125V34.375H28.25V37.8125H24.8125ZM31.6875 37.8125V34.375H35.125V37.8125H31.6875ZM38.5625 37.8125V34.375H42V37.8125H38.5625ZM17.9375 44.6875V41.25H21.375V44.6875H17.9375ZM24.8125 44.6875V41.25H28.25V44.6875H24.8125ZM31.6875 44.6875V41.25H35.125V44.6875H31.6875ZM24.8125 30.9375V27.5H28.25V30.9375H24.8125ZM31.6875 30.9375V27.5H35.125V30.9375H31.6875ZM38.5625 30.9375V27.5H42V30.9375H38.5625Z"
+                    fill="black" />
+            </svg>
+            <p>10+ years of Experience</p>
+        </div>
+    </div>
+
+    <div class="consultation-section" id="consult">
+        <div class="consult-left to-observe from-left">
+            <img src="./img/consult-image.png" alt="consult-image">
+        </div>
+        <div class="consult-right  to-observe from-right">
+            <div class="consult-right-text">
+                <h1>Start a consultation with a <span>doctor.</span></h1>
+                <p>Book a call with trusted healthcare professionals for expert advice and guidance tailored to your
+                    specific needs and concerns.</p>
+            </div>
+            <button class="primary-button" onclick="window.location='appointment.html'">Consult Now</button>
+        </div>
+    </div>
+
+    <div class="testimonials-section" id="testimonials">
+        <h1 class="to-observe from-bottom">What our patients say</h1>
+        <div class="testimonials">
+            <div class="testimonials-left to-observe from-left">
+                <div class="testimonial-details">
+                    <img src="./img/Frame 11.png" alt="img">
+                    <h3>Sarah M.</h3>
+                </div>
+                <div class="testimonial-para">
+                    MediConnect Solutions changed the game for me. Booking consultations with doctors was effortless,
+                    and the advice I received was invaluable. Highly recommend!
+                </div>
+            </div>
+            <div class="testimonials-right to-observe from-right">
+                <div class="testimonial-right-details testimonial-details">
+                    <img src="./img/Frame 11-1.png" alt="img">
+                    <h5>Jhon D</h5>
+                </div>
+                <div class="testimonial-right-details testimonial-details">
+                    <img src="./img/Frame 11.png" alt="img">
+                    <h5>Sarah M.</h5>
+                </div>
+                <div class="testimonial-right-details testimonial-details">
+                    <img src="./img/Frame 11-3.png" alt="img">
+                    <h5>Emiliy M.</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contact-section" id="contact">
+        <h3 class=" to-observe from-bottom">Contact</h3>
+        <div class="contact">
+            <div class="contact-left to-observe from-left">
+                <h3>Let's take your <span>healthcare</span> to the next level.</h3>
+            </div>
+            <div class="form-container to-observe from-right">
+                <form class="form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input required="" name="name" id="contact_name" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input required="" name="email" id="contact_email" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input required="" name="phone" id="contact_phone" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="textarea">How Can We Help You?</label>
+                        <textarea cols="50" rows="4" id="contact_textarea" name="textarea"></textarea>
+                    </div>
+                    <button type="submit" class="primary-button" onclick="ContactForm()">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footer-1 to-observe from-bottom">
+            <img src="./img/Logo.png" class="logo"></img>
+            <nav>
+                <a onclick="lenis.scrollTo('#home')">Home</a>
+                <a onclick="lenis.scrollTo('#about')">About</a>
+                <a onclick="lenis.scrollTo('#consult')">Consultation</a>
+                <a onclick="lenis.scrollTo('#testimonials')">Testimonials</a>
+                <a onclick="lenis.scrollTo('#contact')">Contact</a>
+            </nav>
+        </div>
+        <p class="to-observe from-bottom">Copyright © 2022. All rights reserved</p>
+    </div>
+
+
+    <div class="circle"></div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "nhBiCZCIlZfgs3wxn",
+            });
+        })();
+    </script>
+
+    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

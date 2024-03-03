@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/consult.css">
+</head>
+
+<body>
+
+    <div class="left">
+        <img src="./img/doctorimg.jpg" alt="img">
+    </div>
+    <div class="right">
+        <h1>Consult with a doctor</h1>
+        <p>Enter your name and details to book a consultation</p>
+        <form action="">
+            <div class="form-div">
+                <label for="name">Name</label>
+                <input type="name" placeholder="name" name="name" id="name" required>
+            </div>
+            <div class="form-div">
+                <label for="age">age</label>
+                <input type="number" placeholder="age" name="age" id="age" required>
+            </div>
+            <div class="form-div">
+                <label for="phone">phone</label>
+                <input type="phone" placeholder="phone" name="phone" id="phone" required>
+            </div>
+            <div class="form-div">
+                <label for="time">time</label>
+                <input type="date" placeholder="time" name="time" id="time" required>
+            </div>
+            <div class="form-div">
+                <label for="message">message</label>
+                <textarea name="message" cols="30" rows="5" id="msg"></textarea>
+            </div>
+
+            <button id="register" onclick="appointmentForm()">Register</button>
+
+        </form>
+    </div>
+
+
+    <div class="circle"></div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "nhBiCZCIlZfgs3wxn",
+            });
+        })();
+    </script>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
